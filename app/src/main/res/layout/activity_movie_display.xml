@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieDisplayActivity">
+
+    <TextView
+        android:id="@+id/TituloPelicula"
+        android:layout_width="153dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="18dp"
+        android:text="TituloPelicula"
+        app:layout_constraintBottom_toTopOf="@+id/DuracionMinutos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <TextView
+        android:id="@+id/DuracionMinutos"
+        android:layout_width="153dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="9dp"
+        android:text="Duracionminutos"
+        app:layout_constraintBottom_toTopOf="@+id/NombredelDirector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TituloPelicula" />
+
+    <TextView
+        android:id="@+id/NombredelDirector"
+        android:layout_width="153dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="15dp"
+        android:text="nombreDirector"
+        app:layout_constraintBottom_toTopOf="@+id/anyoLanzamiento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DuracionMinutos" />
+
+    <TextView
+        android:id="@+id/anyoLanzamiento"
+        android:layout_width="153dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="29dp"
+        android:text="AnyoLanzamiento"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NombredelDirector" />
+
+    <TextView
+        android:id="@+id/idPelicula"
+        android:layout_width="147dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="164dp"
+        android:text="Introduce la idPelicula"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="Id de la Pelicula"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/TituloPelicula"
+        app:layout_constraintEnd_toStartOf="@+id/Buscar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPelicula" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="126dp"
+        android:text="Introducir otra película"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anyoLanzamiento" />
+
+    <Button
+        android:id="@+id/BorrarPelicula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="50dp"
+        android:text="Borrar esta pelicula"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/Buscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="181dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="342dp"
+        android:text="buscar"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
